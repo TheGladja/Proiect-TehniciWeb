@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proiect Tehnici Web</title>
+  <link rel="stylesheet" href="Proiect7_style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="Proiect6/logo.png" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="PROIECT4_WEB.html">Home</a></li>
+          <li><a href="PROIECT1_WEB.html">Music</a></li>
+          <li><a href="PROIECT_WEB.html">Phones</a></li>
+          <li><a href="PROIECT3_HTML.html">Login</a></li>
+        </ul>
+      </nav>
+      <img src="Proiect6/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="row">
+      <div class="col-1">
+        <h2>PS4 V2<br>Dualshock 4</h2>
+        <h3>Wireless Controller for PlayStation 4</h3>
+        <p>(Compatible/Generic)</p>
+        <h4>$32.50</h4>
+        <button type="button"><a href="https://gamepad.compari.ro/sony/playstation-4-dualshock-4-v2-wireless-p346558404/">Buy Now</a><img src="Proiect6/arrow.png"></button>
+      </div>
+      <div class="col-2">
+        <img src="Proiect6/controller.png" class="controller">
+        <div class="color-box"></div>
+        <div class="add-btn">
+          <img src="Proiect6/add.png">
+          <p><small>Add to Cart</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="social-links">
+      <img src="Proiect6/fb.png">
+      <img src="Proiect6/tw.png">
+      <img src="Proiect6/ig.png">
+    </div>
+  </div>
+
+<script>
+  var menuList = document.getElementById("menuList");
+  menuList.style.maxHeight = "0px";
+  function togglemenu(){
+    if( menuList.style.maxHeight == "0px")
+    {
+      menuList.style.maxHeight = "130px";
+    }
+    else
+    {
+      menuList.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+</body>
+
+</html>

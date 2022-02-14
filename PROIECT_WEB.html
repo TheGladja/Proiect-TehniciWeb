@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proiect Tehnici Web</title>
+  <link rel="stylesheet" href="Proiect_style.css">
+</head>
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">
+          <img src="logo.png">
+      </div>
+      <div class="nav-links">
+            <ul>
+              <li><a href="PROIECT4_WEB.html">Home</a></li>
+              <li><a href="PROIECT1_WEB.html">Music</a></li>
+              <li><a href="PROIECT7.html">Controllers</a></li>
+              <li><a href="PROIECT3_HTML.html">Login</a></li>
+            </ul>
+      </div>
+    </nav>
+    <div class="information">
+      <div class="overlay"></div>
+      <img src="mobile.png" class="mobile">
+      <div id="circle">
+        <div class="feature one">
+          <img src="camera.png">
+          <div>
+            <h1>Camera</h1>
+            <p>12MP, Wide Angle LEns</p>
+          </div>
+        </div>
+        <div class="feature two">
+          <img src="processor.png">
+          <div>
+            <h1>Processor</h1>
+            <p>Snapdragon Octa-core 11nm</p>
+          </div>
+        </div>
+        <div class="feature three">
+          <img src="display.png">
+          <div>
+            <h1>Display</h1>
+            <p>6.5" Mini-Drop Fullscreen</p>
+          </div>
+        </div>
+        <div class="feature four">
+          <img src="battery.png">
+          <div>
+            <h1>Battery life</h1>
+            <p>5000mAh, 720Hrs Sandby</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <img src="1arrow.png" id="upBtn">
+      <h3>Features</h3>
+      <img src="1arrow.png" id="downBtn">
+    </div>
+
+  </div>
+
+  <script>
+    var circle = document.getElementById("circle");
+    var upBtn = document.getElementById("upBtn");
+    var downBtn = document.getElementById("downBtn");
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+    upBtn.onclick = function()
+    {
+      rotateSum = rotateValue + "rotate(-90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+    downBtn.onclick = function()
+    {
+      rotateSum = rotateValue + "rotate(90deg)";
+      circle.style.transform = rotateSum;
+      rotateValue = rotateSum;
+    }
+  </script>
+
+</body>
+</html>

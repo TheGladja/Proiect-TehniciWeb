@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proiect Tehnici Web</title>
+  <link rel="stylesheet" href="Proiect1_style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="Proiect1/logo.png" class="logo">
+      <ul>
+        <li><a href="PROIECT4_WEB.html">Home</a></li>
+        <li><a href="PROIECT_WEB.html">Phones</a></li>
+        <li><a href="PROIECT7.html">Controllers</a></li>
+        <li><a href="PROIECT3_HTML.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="left-col">
+        <h1>THE<br>REAL<br>SOUND</h1>
+      </div>
+      <div class="right-col">
+        <p>Click Here To Listen</p>
+        <img src="Proiect1/play.png" id="icon">
+      </div>
+
+    </div>
+  </div>
+
+<audio id="mySong">
+  <source src="Proiect1/mySong.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  var mySong = document.getElementById("mySong");
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    if(mySong.paused){
+      mySong.play();
+      icon.src = "Proiect1/pause.png";
+    }
+    else{
+      mySong.pause();
+      icon.src = "Proiect1/play.png";
+    }
+  }
+</script>
+
+</body>
+
+</html>

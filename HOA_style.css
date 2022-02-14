@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("HOA/hhh.jpg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.back a{
+  text-decoration: none;
+  width: 30px;
+  font-family: sans-serif;
+  position: absolute;
+  color: #fff;
+  top: 50px;
+  right: 100px;
+}
+h1{
+  background: linear-gradient(to left, black, #eee, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 85px;
+  position: relative;
+  text-align: center;
+  border-top: 50px;
+  margin: 85px auto;
+  font-family: "Century Gothic";
+  max-width: 1000px;
+}
+h1:before{
+  content:"";
+  display: block;
+  width: 300px;
+  height: 2px;
+  position: absolute;
+  background: linear-gradient(to left, #fff, transparent);
+  left: -215px;
+  top: 50%;
+  z-index: 0;
+}
+h1:after{
+  content:"";
+  display: block;
+  width: 300px;
+  height: 2px;
+  position: absolute;
+  background: linear-gradient(to right, #fff, transparent);
+  right: -215px;
+  top: 50%;
+  z-index: 0;
+}
+.form-box{
+  width: 700px;
+  height: 500px;
+  position: relative;
+  margin: 1% auto;
+  background: transparent;
+  padding: 5px;
+}
+.description{
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Times New Roman";
+}
+#icon{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  margin: 850px 870px auto;
+  padding: 15px;
+  border-radius: 50%;
+}
+#facebook{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  padding: 15px;
+  border-radius: 50%;
+  margin: 50px 0;
+}
